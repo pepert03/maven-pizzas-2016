@@ -66,7 +66,6 @@ def limpiar_datos():
     orders.to_csv('./data/orders_n.csv', sep=',', encoding='latin-1', index=False)
 
 
-
 def pizzas_por_dia(ingredientes, pizza_info):
     dias = pd.DataFrame(columns=[])
     for ingredient in ingredientes:
@@ -107,6 +106,7 @@ def pizzas_por_dia(ingredientes, pizza_info):
                     dias.iloc[dia][ingrediente] += size
     return dias
 
+
 def pizzas_por_semana(dias,ingredientes):
     semanas = pd.DataFrame(columns=[])
     for ingredient in ingredientes:
@@ -117,6 +117,7 @@ def pizzas_por_semana(dias,ingredientes):
         n = i//7
         semanas.iloc[n] += dias.iloc[i]
     return semanas
+
 
 def main():
 
