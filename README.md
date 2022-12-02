@@ -10,7 +10,9 @@ Todos los archivos necesarios se encuentran en la carpeta `data`, los nuevos son
 * `orders.csv`: Archivo con los pedidos
 * `order_details.csv`: Archivo con los detalles de los pedidos
 
-## Análisis de datos
+## Ejecución
+**Nota**: El tiempo de ejecución de `etl.py` es de 3 minutos aprox., los datasets obtenidos ya están guardados en la carpeta `data`, no hace falta ejecutar `etl.py`para hacer la predicción.
+
 Para analizar los datos, se puede ejecutar el script `etl.py`, generando los archivos:
 * `orders_n.csv`: Archivo limpio de pedidos
 * `order_details_n.csv`: Archivo limpio de detalles de pedidos
